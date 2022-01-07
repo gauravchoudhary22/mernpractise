@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 app.use(express.json())
 
 
-mongoose.connect("mongodb+srv://gaurav:gaurav123@mca.zmcv9.mongodb.net/mySecondDatabase?", {
+mongoose.connect("mongolink", {
     useNewUrlParser: true, useUnifiedTopology: true
 }).then(() => {
     console.log("Successfully connected to the database");    
